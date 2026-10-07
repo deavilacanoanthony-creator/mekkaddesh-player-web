@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#090b12">
+    <meta
+      name="description"
+      content="Conoce Mekkaddesh Player: música local, biblioteca organizada, letras y controles de sonido en una sola app."
+    >
+    <title>Mekkaddesh Player — Tu música, a tu manera</title>
+    <link rel="icon" type="image/png" href="assets/images/app_icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav wrap" aria-label="Navegación principal">
+        <a class="brand" href="#inicio" aria-label="Mekkaddesh Player, inicio">
+          <img src="assets/images/app_icon.png" alt="" width="42" height="42">
+          <span>Mekkaddesh<span class="brand-light"> Player</span></span>
+        </a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-menu"
+          aria-label="Abrir menú"
+        >
+          <span></span><span></span>
+        </button>
+        <div class="nav-links" id="site-menu">
+          <a href="#biblioteca">Biblioteca</a>
+          <a href="#funciones">Funciones</a>
+          <a href="#letras">Letras</a>
+          <a href="#studio">MK Studio</a>
+          <a href="#personaliza">Personalización</a>
+          <a class="nav-cta" href="#funciones">Conoce el reproductor <span aria-hidden="true">↗</span></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero wrap" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="live-dot"></span> Tu colección, tu ritmo</p>
+          <h1>La música que ya tienes.<br><span>Como te gusta escucharla.</span></h1>
+          <p class="hero-description">
+            Mekkaddesh Player reúne tu biblioteca local, tus playlists, las letras
+            y los controles de sonido en una experiencia hecha para ti.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#funciones">Explorar funciones <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="#biblioteca">Así funciona <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-note">
+            <span class="note-icon" aria-hidden="true">♪</span>
+            <span>Tu música local. Tus decisiones.</span>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="Mekkaddesh Player en el teléfono">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="hero-phone-scene" data-reveal>
+            <div class="phone-shadow"></div>
+            <div class="device phone-device hero-phone">
+              <div class="phone-frame">
+                <div class="phone-screen">
+                  <img
+                    src="assets/player-now-playing.jpg"
+                    alt="Captura real del reproductor Mekkaddesh Player mostrando la canción Momentum"
+                    width="768"
+                    height="1536"
+                    fetchpriority="high"
+                  >
+                </div>
+                <span class="phone-side-button side-button-one"></span>
+                <span class="phone-side-button side-button-two"></span>
+              </div>
+            </div>
+            <div class="device-reflection"></div>
+          </div>
+          <div class="float-tag tag-library" data-reveal><span aria-hidden="true">▤</span> Tu biblioteca</div>
+          <div class="float-tag tag-lyrics" data-reveal><span aria-hidden="true">♫</span> Reproducción</div>
+          <div class="float-tag tag-equalizer" data-reveal><span aria-hidden="true">≋</span> Sonido a tu gusto</div>
+          <div class="hero-glow"></div>
+        </div>
+        <a class="scroll-cue" href="#biblioteca"><span></span> Desliza para descubrir</a>
+      </section>
+
+      <section class="intro-section" id="biblioteca">
+        <div class="wrap intro-grid">
+          <div>
+            <p class="eyebrow">Tu colección, organizada</p>
+            <h2>Todo lo que escuchas.<br><span>Fácil de encontrar.</span></h2>
+          </div>
+          <div class="intro-copy">
+            <p>
+              Explora las canciones disponibles en tu biblioteca y recórrelas por
+              artistas, álbumes o carpetas. Guarda favoritas y vuelve a tus
+              reproducciones recientes o más escuchadas.
+            </p>
+            <a class="text-link" href="#funciones">Ver qué puedes hacer <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="wrap library-stage">
+          <div class="library-device-wrap" data-reveal>
+            <div class="device library-device">
+              <div class="phone-frame">
+                <div class="phone-screen library-screen">
+                  <div class="library-screen-top"><span>9:41</span><span>● ● ●</span></div>
+                  <div class="library-screen-heading">
+                    <span class="library-greeting">TU MÚSICA</span>
+                    <strong>Biblioteca</strong>
+                    <span class="library-search" aria-hidden="true">⌕</span>
+                  </div>
+                  <div class="library-tabs"><b>Canciones</b><span>Artistas</span><span>Álbumes</span></div>
+                  <div class="library-screen-list">
+                    <div class="library-song song-one"><span class="song-cover"></span><span><b>Tu colección</b><i>Canciones</i></span><em>•••</em></div>
+                    <div class="library-song song-two"><span class="song-cover"></span><span><b>Artistas</b><i>Explora por artista</i></span><em>›</em></div>
+                    <div class="library-song song-three"><span class="song-cover"></span><span><b>Álbumes</b><i>Explora por álbum</i></span><em>›</em></div>
+                    <div class="library-song song-four"><span class="song-cover"></span><span><b>Playlists</b><i>Tus listas</i></span><em>›</em></div>
+                  </div>
+                  <div class="library-now-playing">
+                    <span class="now-playing-art"></span>
+                    <span><b>Reproduciendo</b><i>Abre el reproductor</i></span>
+                    <strong>Ⅱ</strong>
+                  </div>
+                  <div class="library-nav-dots"><i></i><i></i><i></i></div>
+                </div>
+              </div>
+            </div>
+            <span class="device-edge-glow"></span>
+          </div>
+          <div class="library-float-panel float-artists" data-reveal>
+            <span class="panel-orb orb-violet">A</span><span><b>Artistas</b><i>Tu música, agrupada</i></span>
+          </div>
+          <div class="library-float-panel float-playlists" data-reveal>
+            <span class="panel-orb orb-cyan">♫</span><span><b>Playlists</b><i>Favoritas y recientes</i></span>
+          </div>
+          <div class="library-stage-glow"></div>
+        </div>
+      </section>
+
+      <section class="features-section" id="funciones">
+        <div class="wrap">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Hecho para escuchar</p>
+              <h2>Funciones que siguen<br><span>tu manera de disfrutar.</span></h2>
+            </div>
+            <p>Lo esencial para escuchar, organizar y personalizar tu música, todo en el reproductor.</p>
+          </div>
+          <div class="feature-showcase">
+            <article class="feature-row feature-playlists">
+              <div class="feature-copy feature-row-copy">
+                <span class="feature-number">01 / ORGANIZA</span>
+                <h3>Tus playlists, a tu manera.</h3>
+                <p>Crea listas propias y encuentra también tus favoritas, las más escuchadas, las recientes y las canciones con letras disponibles.</p>
+                <a class="text-link" href="#letras">Descubre las letras <span aria-hidden="true">↗</span></a>
+              </div>
+              <div class="playlist-device-scene" data-reveal aria-label="Representación conceptual de playlists">
+                <div class="device playlist-device">
+                  <div class="phone-frame">
+                    <div class="phone-screen playlist-screen">
+                      <span class="screen-kicker">TU BIBLIOTECA</span>
+                      <strong class="screen-title">Playlists</strong>
+                      <div class="playlist-screen-row"><i class="playlist-art art-favorite">♡</i><span><b>Favoritas</b><em>Tus canciones guardadas</em></span><small>›</small></div>
+                      <div class="playlist-screen-row"><i class="playlist-art art-recent">↺</i><span><b>Recientes</b><em>Vuelve a escuchar</em></span><small>›</small></div>
+                      <div class="playlist-screen-row"><i class="playlist-art art-most">⌁</i><span><b>Más escuchadas</b><em>Lo que más suena</em></span><small>›</small></div>
+                      <div class="playlist-screen-row"><i class="playlist-art art-custom">＋</i><span><b>Mis playlists</b><em>Hechas por ti</em></span><small>›</small></div>
+                      <div class="playlist-mini-player"><span class="mini-art"></span><span><b>En reproducción</b><em>Tu música local</em></span><strong>Ⅱ</strong></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="playlist-scene-glow"></span>
+                <span class="floating-playlist-tag">Colección personal</span>
+              </div>
+            </article>
+            <article class="feature-row feature-equalizer">
+              <div class="equalizer-device-scene" data-reveal aria-label="Representación conceptual del ecualizador de cinco bandas y sus efectos">
+                <div class="device equalizer-device device-back">
+                  <div class="phone-frame">
+                    <div class="phone-screen eq-screen-back">
+                      <span class="screen-kicker">MEKKADDESH PLAYER</span>
+                      <strong class="screen-title">Tu sonido</strong>
+                      <div class="eq-mini-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                      <div class="mini-effect"><span>♫</span><b>Reproducción</b></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="device equalizer-device device-front">
+                  <div class="phone-frame">
+                    <div class="phone-screen eq-screen">
+                      <span class="screen-kicker">AJUSTES DE SONIDO</span>
+                      <strong class="screen-title">Ecualizador</strong>
+                      <div class="eq-sliders"><i></i><i></i><i></i><i></i><i></i></div>
+                      <div class="eq-labels"><span>60 Hz</span><span>250</span><span>1 k</span><span>4 k</span><span>16 k</span></div>
+                      <div class="eq-effects"><span>Bass Boost</span><span>Virtualizer</span><span>Reverb</span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="eq-scene-glow"></span>
+              </div>
+              <div class="feature-copy feature-row-copy">
+                <span class="feature-number">02 / PERSONALIZA EL SONIDO</span>
+                <h3>Un ajuste para cada escucha.</h3>
+                <p>Moldea el sonido con cinco bandas y ajusta Bass Boost, Virtualizer y Reverb desde el ecualizador integrado.</p>
+              </div>
+            </article>
+            <article class="feature-row feature-landscape">
+              <div class="feature-copy feature-row-copy">
+                <span class="feature-number">03 / ESCUCHA A TU MANERA</span>
+                <h3>Tu música, también en horizontal.</h3>
+                <p>Gira el teléfono y disfruta el reproductor en orientación horizontal, con la canción y los controles al frente.</p>
+              </div>
+              <div class="landscape-device-scene" data-reveal aria-label="Captura real del reproductor Mekaddesh Player en orientación horizontal dentro de un teléfono 3D">
+                <span class="landscape-scene-glow"></span>
+                <div class="landscape-device">
+                  <div class="landscape-frame">
+                    <img
+                      src="assets/horizontal-player.jpg"
+                      alt="Reproductor de Mekaddesh Player en orientación horizontal, con canción, artista y controles visibles"
+                      width="1732"
+                      height="768"
+                      loading="lazy"
+                    >
+                  </div>
+                  <span class="landscape-camera" aria-hidden="true"></span>
+                </div>
+                <span class="landscape-float-label">MODO HORIZONTAL</span>
+              </div>
+            </article>
+            <article class="feature-row feature-discover">
+              <div class="feature-copy feature-row-copy">
+                <span class="feature-number">04 / DESCUBRE Y EXPLORA</span>
+                <h3>Un feed musical. Dos maneras de descubrir.</h3>
+                <p>
+                  En «Biblioteca», recorre tus canciones locales y alterna entre
+                  portada y video cuando hay uno disponible. En «Para ti»,
+                  descubre música relacionada con tus géneros favoritos con
+                  adelantos de 15 segundos.
+                </p>
+                <div class="discover-modes">
+                  <span><i>01</i> Biblioteca local</span>
+                  <span><i>02</i> Recomendaciones por género</span>
+                  <span><i>03</i> Adelantos de 15 segundos</span>
+                </div>
+              </div>
+              <div class="discover-device-scene" data-reveal aria-label="Capturas reales de los modos Para ti y Biblioteca de Mekkaddesh Player dentro de teléfonos 3D">
+                <span class="discover-scene-glow"></span>
+                <div class="device discover-phone discover-library-video">
+                  <div class="phone-frame">
+                    <div class="phone-screen">
+                      <img
+                        src="assets/discover-library-video.jpg"
+                        alt="Captura real de Biblioteca mostrando una canción con su portada y la opción Cambiar a video"
+                        width="768"
+                        height="1920"
+                        loading="lazy"
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="device discover-phone discover-library-cover">
+                  <div class="phone-frame">
+                    <div class="phone-screen">
+                      <img
+                        src="assets/discover-library-cover.jpg"
+                        alt="Captura real de Biblioteca mostrando el video de una canción y la opción Cambiar a portada"
+                        width="768"
+                        height="1920"
+                        loading="lazy"
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="device discover-phone discover-for-you">
+                  <div class="phone-frame">
+                    <div class="phone-screen">
+                      <img
+                        src="assets/discover-for-you.jpg"
+                        alt="Captura real de Para ti mostrando una recomendación musical de un género seleccionado"
+                        width="768"
+                        height="1920"
+                        loading="lazy"
+                      >
+                    </div>
+                  </div>
+                </div>
+                <span class="discover-float-label discover-label-library">BIBLIOTECA <i>Tu música local</i></span>
+                <span class="discover-float-label discover-label-for-you">PARA TI <i>Adelanto · 15 s</i></span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="lyrics-section" id="letras">
+        <div class="wrap lyrics-grid">
+          <div class="lyrics-copy">
+            <p class="eyebrow">Sigue el ritmo de las palabras</p>
+            <h2>Tu música también<br><span>tiene palabras.</span></h2>
+            <p>
+              Letras sincronizadas para seguir cada canción mientras escuchas,
+              cuando están disponibles. También puedes consultar y guardar
+              letras para tu música.
+            </p>
+            <div class="lyrics-points">
+              <span><i>01</i> Letras sincronizadas</span>
+              <span><i>02</i> Letras en texto</span>
+              <span><i>03</i> Guarda letras para tus canciones</span>
+            </div>
+          </div>
+          <div class="lyrics-device-scene" data-reveal aria-label="Representación conceptual de la pantalla de letras">
+            <span class="lyrics-halo"></span>
+            <div class="device lyrics-device">
+              <div class="phone-frame">
+                <div class="phone-screen lyrics-screen">
+                  <div class="lyrics-screen-top"><span>9:41</span><b>LETRAS</b><span>•••</span></div>
+                  <div class="lyrics-artwork"></div>
+                  <div class="lyrics-track"><strong>En reproducción</strong><span>Letra disponible</span></div>
+                  <div class="lyrics-rule"><i></i></div>
+                  <div class="lyrics-lines">
+                    <span>Línea anterior</span>
+                    <strong>Línea sincronizada</strong>
+                    <span>Línea siguiente</span>
+                    <span class="lyrics-line-muted">La letra avanza con la canción</span>
+                    <span class="lyrics-line-muted">Sigue la reproducción</span>
+                  </div>
+                  <div class="lyrics-controls"><span>‹‹</span><b>Ⅱ</b><span>››</span></div>
+                </div>
+              </div>
+            </div>
+            <span class="lyrics-float-chip">Línea activa <i></i></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="studio-section" id="studio">
+        <div class="wrap studio-grid">
+          <div class="studio-copy">
+            <p class="eyebrow">Ajusta las transiciones. Conserva el ritmo.</p>
+            <h2>Mekaddesh<br><span>Studio.</span></h2>
+            <p>
+              Prepara una canción para la siguiente, escucha la vista previa y
+              elige cómo pasar de un tema al otro desde MK Studio.
+            </p>
+            <div class="studio-transitions">
+              <span>Desvanecer</span><span>Transición al cambiar</span><span>Suave</span><span>Rápida</span>
+            </div>
+            <p class="studio-footnote">Control de transición y preescucha para tu cola de reproducción.</p>
+          </div>
+          <div class="studio-device-scene" data-reveal aria-label="Capturas reales de MK Studio: controles de transición y reproductor en dos teléfonos 3D">
+            <span class="studio-glow"></span>
+            <div class="studio-image-phone studio-image-settings">
+              <div class="studio-image-frame">
+                <img
+                  src="assets/studio-settings.jpg"
+                  alt="Captura real de MK Studio con opciones de transición, duración y ajustes generales"
+                  width="768"
+                  height="1732"
+                  loading="lazy"
+                >
+              </div>
+            </div>
+            <div class="studio-image-phone studio-image-player">
+              <div class="studio-image-frame">
+                <img
+                  src="assets/studio-player.jpg"
+                  alt="Captura real de MK Studio con canción actual, controles de reproducción y vista previa de canciones"
+                  width="768"
+                  height="1732"
+                  loading="lazy"
+                >
+              </div>
+            </div>
+            <span class="studio-image-label studio-label-settings">AJUSTES DE TRANSICIÓN</span>
+            <span class="studio-image-label studio-label-player">MK STUDIO</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="personal-section" id="personaliza">
+        <div class="wrap personal-grid">
+          <div class="personal-visual" data-reveal aria-label="Representación de los modos de apariencia">
+            <div class="theme-device theme-neon">
+              <span class="theme-device-top">MEKKADDESH</span><span class="theme-device-orb"></span>
+              <span class="theme-device-lines"><i></i><i></i><i></i></span><b>Neón</b>
+            </div>
+            <div class="theme-device theme-dark">
+              <span class="theme-device-top">MEKKADDESH</span><span class="theme-device-orb"></span>
+              <span class="theme-device-lines"><i></i><i></i><i></i></span><b>Oscuro</b>
+            </div>
+            <div class="theme-device theme-light">
+              <span class="theme-device-top">MEKKADDESH</span><span class="theme-device-orb"></span>
+              <span class="theme-device-lines"><i></i><i></i><i></i></span><b>Claro</b>
+            </div>
+            <span class="personal-spark spark-left">✳</span>
+            <span class="personal-spark spark-right">✦</span>
+          </div>
+          <div class="personal-copy">
+            <p class="eyebrow">Hazlo tuyo</p>
+            <h2>Un reproductor<br><span>con tu propio estilo.</span></h2>
+            <p>
+              Elige entre los modos visuales disponibles, cambia el color de
+              acento y ajusta la apariencia de la biblioteca. En el reproductor,
+              los colores pueden acompañar la portada de la canción.
+            </p>
+            <div class="theme-options">
+              <span><i class="swatch swatch-neon"></i>Neón</span>
+              <span><i class="swatch swatch-dark"></i>Oscuro</span>
+              <span><i class="swatch swatch-light"></i>Claro</span>
+            </div>
+            <a class="text-link" href="#cierre">Descubre Mekkaddesh Player <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing-section" id="cierre">
+        <div class="wrap closing-card">
+          <div class="closing-icon"><img src="assets/images/app_icon.png" alt="" width="58" height="58"></div>
+          <p class="eyebrow">Mekkaddesh Player</p>
+          <h2>Tu música merece<br><span>un espacio propio.</span></h2>
+          <p>Una biblioteca local, un sonido a tu gusto y una experiencia que puedes hacer tuya.</p>
+          <a class="button button-primary" href="#inicio">Volver al inicio <span aria-hidden="true">↑</span></a>
+          <div class="closing-glow"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-content">
+        <a class="brand footer-brand" href="#inicio">
+          <img src="assets/images/app_icon.png" alt="" width="34" height="34">
+          <span>Mekkaddesh<span class="brand-light"> Player</span></span>
+        </a>
+        <span class="footer-note">Un reproductor para tu música local.</span>
+        <nav class="footer-legal-links" aria-label="Información legal">
+          <a href="terms.html">Términos y condiciones</a>
+          <a href="privacy.html">Política de privacidad</a>
+        </nav>
+        <a class="footer-top" href="#inicio">Volver arriba ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>
