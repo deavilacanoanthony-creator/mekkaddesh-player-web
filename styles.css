@@ -1766,6 +1766,21 @@ h3 {
     17px 5px 60px rgba(39, 119, 245, 0.2);
 }
 
+.discover-voice-search {
+  z-index: 4;
+  margin: 120px 0 0 5px;
+  transform: translateZ(30px) rotateY(-12deg) rotateX(2deg) rotateZ(-4deg) scale(0.93);
+}
+
+.discover-voice-search .phone-frame {
+  border-color: rgba(135, 164, 255, 0.42);
+  box-shadow:
+    inset 1px 1px 2px rgba(255, 255, 255, 0.48),
+    inset -2px -2px 4px rgba(0, 0, 0, 0.9),
+    0 20px 34px rgba(0, 0, 0, 0.45),
+    18px 26px 54px rgba(20, 41, 86, 0.28);
+}
+
 .discover-float-label {
   position: absolute;
   z-index: 4;
@@ -1803,9 +1818,21 @@ h3 {
   transform: translateZ(160px) rotateZ(4deg);
 }
 
+.discover-label-voice {
+  left: 22px;
+  bottom: 112px;
+  border-color: rgba(143, 164, 255, 0.25);
+  transform: translateZ(140px) rotateZ(-5deg);
+}
+
 @media (max-width: 900px) {
   .discover-label-library {
     left: 27px;
+  }
+
+  .discover-label-voice {
+    left: 20px;
+    bottom: 100px;
   }
 
   .discover-label-for-you {
@@ -1851,6 +1878,11 @@ h3 {
     left: 18px;
   }
 
+  .discover-label-voice {
+    left: 22px;
+    bottom: 95px;
+  }
+
   .discover-label-for-you {
     right: 27px;
   }
@@ -1894,6 +1926,11 @@ h3 {
     left: 32px;
   }
 
+  .discover-label-voice {
+    left: 18px;
+    bottom: 86px;
+  }
+
   .discover-label-for-you {
     right: 38px;
     bottom: 82px;
@@ -1921,6 +1958,11 @@ h3 {
     left: 26px;
   }
 
+  .discover-label-voice {
+    left: 12px;
+    bottom: 80px;
+  }
+
   .discover-label-for-you {
     right: 27px;
   }
@@ -1942,6 +1984,11 @@ h3 {
 
   .discover-library-cover {
     margin-left: 135px;
+  }
+
+  .discover-label-voice {
+    left: 14px;
+    bottom: 75px;
   }
 
   .discover-float-label {
